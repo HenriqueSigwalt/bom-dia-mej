@@ -8,4 +8,5 @@ app=Flask(__name__)
 def land():
     #asyncio.run(main())
     print(os.environ.get("API_KEY"))
-    return "OI"
+    teste=os.environ.get("API_KEY")
+    return teste
