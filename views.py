@@ -7,6 +7,6 @@ app=Flask(__name__)
 @app.route("/")
 def land():
     call=request.args.get("send")
-    if call==1:
+    if call=="1":
         asyncio.run(main())
     return "OI"
