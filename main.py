@@ -26,7 +26,7 @@ async def main():
         teste = await client.get_entity("@Gabriel_WK04")
         await client.send_message("me","Tu é cobaia para eu testar se programar o horario ta funcionando")
         
-        """
+        
         time = await client.get_entity(time_id)
         await client.send_message(time,time_message)
         instancia = await client.get_entity(instancia_id)
@@ -37,6 +37,6 @@ async def main():
         await client.send_message(coord,coord_message)
         eex = await client.get_entity(eex_id)
         await client.send_message(eex,eex_message)
-        """
+        
     
     return
