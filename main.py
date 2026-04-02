@@ -23,8 +23,8 @@ async def main():
         client = TelegramClient("bdmej",TELEGRAM_API_KEY,TELEGRAM_API_HASH)
         await client.start(phone="5547997892968")
         
-        teste = await client.get_entity("@Gabriel_WK04")
-        await client.send_message("me","Tu é cobaia para eu testar se programar o horario ta funcionando")
+        #teste = await client.get_entity("@Gabriel_WK04")
+        #await client.send_message("me","Tu é cobaia para eu testar se programar o horario ta funcionando")
         
         
         time = await client.get_entity(time_id)
