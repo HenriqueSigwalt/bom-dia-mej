@@ -2,8 +2,8 @@ from telethon import TelegramClient
 import asyncio
 import os
 
-TELEGRAM_API_KEY=os.environ["API_KEY"]
-TELEGRAM_API_HASH=os.environ["API_HASH"]
+TELEGRAM_API_KEY=os.environ.get("API_KEY")
+TELEGRAM_API_HASH=os.environ.get("API_HASH")
 
 time_id=-5120372402
 time_message="Bom dia time!"
