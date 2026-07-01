@@ -27,12 +27,14 @@ async def main():
         
         time = await client.get_entity(time_id)
         await client.send_message(time,time_message)
-        instancia = await client.get_entity(instancia_id)
-        await client.send_message(instancia,instanca_message)
-        coord = await client.get_entity(coord_id)
-        await client.send_message(coord,coord_message)
-        eex = await client.get_entity(eex_id)
-        await client.send_message(eex,eex_message)
         
     
+    return
+
+async def teste(user,text):
+    client = TelegramClient("bdmej",TELEGRAM_API_KEY,TELEGRAM_API_HASH)
+    await client.start(phone="5547997892968")
+    
+    target = await client.get_entity(user)
+    await client.send_message(target,text)
     return

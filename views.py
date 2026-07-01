@@ -10,3 +10,12 @@ def land():
     if call=="1":
         asyncio.run(main())
     return "OI"
+
+@app.route("/inoveq", methods=['POST','GET'])
+def inoveq():
+    if request.method=="POST":
+        algo=request.get_json()
+        user=algo["user"]
+        text=algo["text"]
+        asyncio.run(teste(user,text))
+    return "OI"
